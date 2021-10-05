@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoffeeMachine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="zHb-KY-2FB">
+                                <rect key="frame" x="7" y="94" width="414" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jy5-P3-NUY">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="QlP-G1-jDx"/>
+                                            <constraint firstAttribute="width" constant="130" id="pvU-dy-Kn2"/>
+                                        </constraints>
+                                        <state key="normal" image="americano.photo"/>
+                                        <connections>
+                                            <action selector="makeAmericanoButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BCX-CR-79c"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cit-gu-mtX">
+                                        <rect key="frame" x="142" y="0.0" width="130" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="83N-dD-Qj8"/>
+                                            <constraint firstAttribute="height" constant="100" id="qoS-Lh-Hz0"/>
+                                        </constraints>
+                                        <state key="normal" image="cappuchino.photo"/>
+                                        <connections>
+                                            <action selector="makeCappuchinoButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lmj-hL-idp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCZ-hi-c8N">
+                                        <rect key="frame" x="284" y="0.0" width="130" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="9cY-9V-yNH"/>
+                                            <constraint firstAttribute="height" constant="100" id="dey-k7-KTa"/>
+                                        </constraints>
+                                        <state key="normal" image="latte.photo"/>
+                                        <connections>
+                                            <action selector="makeLatteButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Dy-n9-lWN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="SqR-yY-2Jv"/>
+                                    <constraint firstAttribute="width" constant="414" id="kaS-Qg-XvC"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="rwU-KT-Gst">
+                                <rect key="frame" x="124" y="424" width="180" height="254"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONp-fH-gdx">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="35"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="180" id="1DM-2l-KL8"/>
+                                            <constraint firstAttribute="height" constant="35" id="SnF-07-RMF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="addMilk">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="addMilkButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bJU-UF-MGy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="liE-SX-5WJ">
+                                        <rect key="frame" x="0.0" y="73" width="180" height="35"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="VWF-M7-Zh1"/>
+                                            <constraint firstAttribute="width" constant="180" id="byR-p8-pfd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="addWater">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="addWaterButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eOW-qd-xgz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGh-Ym-Vk6">
+                                        <rect key="frame" x="0.0" y="146" width="180" height="35"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="180" id="83N-fJ-a8X"/>
+                                            <constraint firstAttribute="height" constant="35" id="h5C-7e-eBF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="addCoffe">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="addCoffeeButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qtg-F4-rKR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEa-bd-3Ba">
+                                        <rect key="frame" x="0.0" y="219" width="180" height="35"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="fv6-p1-Dx5"/>
+                                            <constraint firstAttribute="width" constant="180" id="m6H-Wa-R4G"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="cleanTheMachine">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="cleanTheMachineButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WBF-9Q-ZES"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIR-Ho-PhF">
+                                <rect key="frame" x="39" y="284" width="350" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Rzs-DA-tzZ"/>
+                                    <constraint firstAttribute="width" constant="350" id="oyx-Mo-opc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DIR-Ho-PhF" secondAttribute="trailing" constant="39" id="689-OM-Fz0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zHb-KY-2FB" secondAttribute="trailing" constant="7" id="69R-pj-Rcb"/>
+                            <constraint firstItem="rwU-KT-Gst" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="124" id="CaU-zV-yER"/>
+                            <constraint firstItem="zHb-KY-2FB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="GQK-kO-ay6"/>
+                            <constraint firstItem="rwU-KT-Gst" firstAttribute="top" secondItem="DIR-Ho-PhF" secondAttribute="bottom" constant="90" id="KpU-PE-9dD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rwU-KT-Gst" secondAttribute="trailing" constant="124" id="iib-nB-YJo"/>
+                            <constraint firstItem="DIR-Ho-PhF" firstAttribute="top" secondItem="zHb-KY-2FB" secondAttribute="bottom" constant="90" id="qwE-G6-lA7"/>
+                            <constraint firstItem="zHb-KY-2FB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="7" id="u3R-i3-TJN"/>
+                            <constraint firstItem="DIR-Ho-PhF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="xcx-jC-7aL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelForUser" destination="DIR-Ho-PhF" id="cBp-CO-3zZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="-48"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="americano.photo" width="496" height="352"/>
+        <image name="cappuchino.photo" width="490" height="358"/>
+        <image name="latte.photo" width="476" height="362"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
